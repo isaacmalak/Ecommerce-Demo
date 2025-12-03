@@ -9,11 +9,13 @@ const navItems = [
 
 export function StoreNavBar() {
   return (
-    <div className="flex justify-between h-23">
-        
-      {navItems.map((item) => (
-        <NavItem key={item.href} name={item.name} href={item.href} />
-      ))}
+    <div className="flex justify-between h-23 backdrop-blur-xl bg-red-900 "> 
+    <Logo /> 
+      <div className="flex items-center space-x-4">
+        {navItems.map((item) => (
+          <NavItem key={item.href} name={item.name} href={item.href} />
+        ))}
+      </div>
     </div>
   );
 }

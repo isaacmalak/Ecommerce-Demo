@@ -1,3 +1,4 @@
+import { Logo } from "@/app/components/Logo";
 import { NavItem } from "./NavItem";
 
 const navItems = [
@@ -9,7 +10,7 @@ const navItems = [
 
 export function StoreNavBar() {
   return (
-    <div className="flex justify-between h-23 backdrop-blur-xl bg-red-900 "> 
+    <div className="flex justify-between h-23 backdrop-blur-xl bg-red-900 px-6"> 
     <Logo /> 
       <div className="flex items-center space-x-4">
         {navItems.map((item) => (

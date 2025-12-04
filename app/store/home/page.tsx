@@ -1,5 +1,9 @@
+import { HomeBanner } from "./components/HomeBanner";
+
 export default function HomeShell() {
-  return <main>
-    This is the home page
-  </main>;
+  return (
+    <main>
+      <HomeBanner />
+    </main>
+  );
 }

@@ -1,6 +1,3 @@
-export function DashboardShell(){
-     return <main className="bg-amber-50"> 
-
-        
-     </main>
+export function DashboardShell() {
+  return <main className="bg-amber-50"></main>;
 }

@@ -5,10 +5,10 @@ export function Logo({ className }: { className?: string }) {
     <div
       className={
         cn(className) +
-        "text-amber-400 drop-shadow-2xl drop-shadow-amber-600 items-center font-bold text-2xl flex"
+        "flex items-center text-2xl font-bold text-amber-400 drop-shadow-2xl drop-shadow-amber-600"
       }
     >
       El S7s Group
     </div>
-  );  
+  );
 }

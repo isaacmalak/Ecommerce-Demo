@@ -1,14 +1,20 @@
+import Link from "next/link";
 import { cn } from "../utils/cn";
 
 export function Logo({ className }: { className?: string }) {
   return (
-    <div
-      className={
-        cn(className) +
-        "flex items-center text-2xl font-bold text-amber-400 drop-shadow-2xl drop-shadow-amber-600"
-      }
+    <Link
+      className="text-center transition-transform duration-300 hover:-translate-y-1"
+      href={"/store/home"}
     >
-      El S7s Group
-    </div>
+      <h1
+        className={cn(
+          "text-5xl font-bold text-yellow-400 drop-shadow-[4px_4px_0px_rgba(255,115,0,1)]",
+          className,
+        )}
+      >
+        El S7s Group
+      </h1>
+    </Link>
   );
 }

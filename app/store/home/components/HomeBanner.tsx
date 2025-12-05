@@ -1,4 +1,3 @@
-//TODO: Refactor this component to include banner content as divided sections
 
 import { BannerAnimatedImages } from "./BannerAnimatedImages";
 import { BannerContent } from "./BannerContent";

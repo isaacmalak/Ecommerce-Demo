@@ -1,6 +1,6 @@
 export function BannerContent() {
   return (
-    <div className="flex w-1/4 flex-col justify-center rounded-lg bg-black p-4 font-serif">
+    <div className="flex w-1/2 flex-col justify-center rounded-lg bg-black p-4 font-serif">
       <h2 className="text-2xl font-bold text-white opacity-80">
         Looking for DOPE figures?
       </h2>

@@ -6,16 +6,24 @@ export function BannerImage({
   src,
   width,
   height,
+  animationDelay,
 }: {
   position: string;
   src: string;
   width: number;
   height: number;
+  animationDelay?: string;
 }) {
-
+  if (!animationDelay) {
+    animationDelay = "1.0s";
+  }
+  const className = cn(
+    `absolute animate-[slide-up_${animationDelay}_ease-out_forwards]`,
+    position,
+  );
   return (
     <>
-   <style>
+      <style>
         {`
         @keyframes slide-up {
           from { transform: translateY(100px); }
@@ -23,15 +31,13 @@ export function BannerImage({
         }
         `}
       </style>
-    <Image
-      src={src}
-      width={width}
-      height={height}
-      alt=""
-      className={cn("absolute  animate-[slide-up_1.0s_ease-out_forwards]", position)}
+      <Image
+        src={src}
+        width={width}
+        height={height}
+        alt=""
+        className={className}
       />
-      </>
+    </>
   );
-
 }
-

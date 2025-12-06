@@ -14,25 +14,28 @@ export function BannerAnimatedImages() {
         src={"/toys-figures/joker.png"}
         width={230}
         height={70}
-        animationDelay={1.2}
+        animationDelay={1.6}
       />
       <BannerImage
         position="top-0 right-20 "
         src={"/toys-figures/travis.png"}
         width={150}
         height={70}
+        animationDelay={0.8}
       />
       <BannerImage
         position="top-7 right-79 z-10"
         src={"/toys-figures/billy.png"}
         width={200}
         height={70}
+        animationDelay={1.5}
       />
       <BannerImage
         position="top-3 right-80"
         src={"/toys-figures/homelander.png"}
         width={430}
         height={70}
+        animationDelay={1.4}
       />
     </div>
   );

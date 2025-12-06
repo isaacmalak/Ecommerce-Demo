@@ -14,10 +14,10 @@ export function BannerImage({
   height: number;
   animationDelay?: number;
 }) {
-  const className = cn(
-    `absolute animate-[slide-up_${animationDelay}s_ease-out_forwards]`,
-    position,
-  );
+  const delay = animationDelay ? `${animationDelay}s` : "1.2s";
+
+  const classString = `absolute`;
+  const className = cn(classString, position);
   return (
     <>
       <style>
@@ -34,6 +34,9 @@ export function BannerImage({
         height={height}
         alt=""
         className={className}
+        style={{
+          animation: `slide-up ${delay} ease-in-out forwards`,
+        }}
       />
     </>
   );

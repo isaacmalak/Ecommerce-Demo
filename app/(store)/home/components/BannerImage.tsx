@@ -12,13 +12,10 @@ export function BannerImage({
   src: string;
   width: number;
   height: number;
-  animationDelay?: string;
+  animationDelay?: number;
 }) {
-  if (!animationDelay) {
-    animationDelay = "1.0s";
-  }
   const className = cn(
-    `absolute animate-[slide-up_${animationDelay}_ease-out_forwards]`,
+    `absolute animate-[slide-up_${animationDelay}s_ease-out_forwards]`,
     position,
   );
   return (

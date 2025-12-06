@@ -23,8 +23,8 @@ export function BannerImage({
       <style>
         {`
         @keyframes slide-up {
-          from { transform: translateY(100px); }
-          to   { transform: translateY(0); }
+          from { transform: translateY(100px); opacity: 0; }
+          to   { transform: translateY(0); opacity: 1;  }
         }
         `}
       </style>

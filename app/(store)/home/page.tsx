@@ -47,14 +47,19 @@ export default function HomeShell() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="relative flex h-64 flex-col items-center justify-center overflow-hidden rounded-lg border p-4"
+            className="relative flex h-64 flex-col overflow-hidden rounded-lg border p-4"
           >
+            {/* Check [Image element guide](/Images.md)*/}
             <Image
               src={product.imageUrl}
               alt=""
               fill
               className="h-full translate-y-10 scale-125 object-cover object-top"
             />
+            <div className="absolute bottom-0 left-4 w-full px-2 py-1 backdrop-blur-sm">
+              <h3 className="text-lg font-semibold">{product.name}</h3>
+              <p className="text-sm text-gray-700">${product.price}</p>
+            </div>
           </div>
         ))}
       </div>

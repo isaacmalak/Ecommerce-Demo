@@ -41,20 +41,19 @@ const products = [
 ];
 export default function HomeShell() {
   return (
-    <main>
+    <main className="flex flex-col gap-3 p-4">
       <HomeBanner />
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-4 gap-6">
         {products.map((product) => (
           <div
             key={product.id}
-            className="h-1/4 overflow-hidden rounded-lg border p-4"
+            className="relative flex h-64 flex-col items-center justify-center overflow-hidden rounded-lg border p-4"
           >
             <Image
               src={product.imageUrl}
               alt=""
-              width={100}
-              height={100}
-              className="w-full"
+              fill
+              className="h-full translate-y-10 scale-125 object-cover object-top"
             />
           </div>
         ))}

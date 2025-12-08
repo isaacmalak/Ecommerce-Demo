@@ -10,7 +10,7 @@ export function ProductCard({ product }: { product: Product }) {
     >
       {/* Check [Image element guide](/Images.md)*/}
       <Image
-        src={product.imageUrl}
+        src={product.images[0]}
         alt=""
         fill
         className="h-full translate-y-10 scale-125 object-cover object-top duration-900 group-hover:scale-150 group-hover:transform group-hover:transition group-hover:duration-500"

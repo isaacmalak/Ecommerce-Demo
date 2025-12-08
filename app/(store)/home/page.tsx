@@ -1,42 +1,42 @@
-import { HomeBanner } from "./components/HomeBanner";
-import { ProductCard } from "./components/ProductCard";
+import { HomeBanner } from './components/HomeBanner';
+import { ProductCard } from './components/ProductCard';
 //TODO: remove constants
 export type Product = {
   id: number;
   name: string;
   price: number;
-  imageUrl: string;
+  images: string[];
 };
-const products: Product[] = [
+export const products: Product[] = [
   {
     id: 1,
-    name: "Superman Figure",
+    name: 'Superman Figure',
     price: 29.99,
-    imageUrl: "/toys-figures/superman.png",
+    images: ['/toys-figures/superman.png', '/toys-figures/joker.png'],
   },
   {
     id: 2,
-    name: "The Joker Figure",
+    name: 'The Joker Figure',
     price: 39.99,
-    imageUrl: "/toys-figures/joker.png",
+    images: ['/toys-figures/joker.png'],
   },
   {
     id: 3,
-    name: "Travis Scott Figure",
+    name: 'Travis Scott Figure',
     price: 19.99,
-    imageUrl: "/toys-figures/travis.png",
+    images: ['/toys-figures/travis.png'],
   },
   {
     id: 4,
-    name: "Billy Butcher Figure",
+    name: 'Billy Butcher Figure',
     price: 49.99,
-    imageUrl: "/toys-figures/billy.png",
+    images: ['/toys-figures/billy.png'],
   },
   {
     id: 5,
-    name: "Homelander Figure",
+    name: 'Homelander Figure',
     price: 49.99,
-    imageUrl: "/toys-figures/homelander.png",
+    images: ['/toys-figures/homelander.png'],
   },
 ];
 export default function HomeShell() {

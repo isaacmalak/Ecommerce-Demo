@@ -26,7 +26,7 @@ export function ProductImagesPanel({ images }: { images: string[] }) {
             onClick={() => setImage(imgSrc)}
             className="relative m-2 h-20 w-20 cursor-pointer border"
           >
-            <Image key={index} src={imgSrc} alt="" fill />
+            <Image key={index} src={imgSrc} alt="" fill className="absolute" />
           </button>
         ))}
       </div>

@@ -6,22 +6,13 @@
 'use client';
 import { ReactNode } from 'react';
 import { StoreNavBar } from './components/StoreNavBar';
-import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+import { AnimatedPages } from './components/AnimatedPages';
 
 export default function HomeLayout({ children }: { children: ReactNode }) {
-  const pathName = usePathname();
   return (
     <div>
       <StoreNavBar />
-      <motion.div
-        key={pathName}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        {children}
-      </motion.div>
+      <AnimatedPages>{children}</AnimatedPages>
     </div>
   );
 }

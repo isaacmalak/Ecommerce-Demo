@@ -2,7 +2,7 @@ import { Logo } from '@/app/components/Logo';
 import { NavItem } from './NavItem';
 
 const navItems = [
-  { name: 'Home', href: '/' },
+  { name: 'Home', href: '/home' },
   { name: 'Products', href: '/products' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },

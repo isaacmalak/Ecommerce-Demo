@@ -9,7 +9,6 @@ export function NavItem({ name, href, icon }: navProps) {
   return (
     <Link href={href} className="rounded-full bg-red-950 px-4 py-3">
       {icon}
-      
       {name}
     </Link>
   );

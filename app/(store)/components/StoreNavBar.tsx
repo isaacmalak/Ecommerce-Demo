@@ -1,17 +1,17 @@
-import { Logo } from "@/app/components/Logo";
-import { NavItem } from "./NavItem";
+import { Logo } from '@/app/components/Logo';
+import { NavItem } from './NavItem';
 
 const navItems = [
-  { name: "Home", href: "/store" },
-  { name: "Products", href: "/store/products" },
-  { name: "About", href: "/store/about" },
-  { name: "Contact", href: "/store/contact" },
+  { name: 'Home', href: '/' },
+  { name: 'Products', href: '/products' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export function StoreNavBar() {
   return (
-    <nav className="flex justify-between h-23 backdrop-blur-xl bg-red-900 px-6 items-center"> 
-    <Logo /> 
+    <nav className="flex h-23 items-center justify-between bg-red-900 px-6 backdrop-blur-xl">
+      <Logo />
       <div className="flex items-center space-x-4">
         {navItems.map((item) => (
           <NavItem key={item.href} name={item.name} href={item.href} />

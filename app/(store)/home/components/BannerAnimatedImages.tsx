@@ -31,9 +31,9 @@ export function BannerAnimatedImages() {
         animationDelay={1.5}
       />
       <BannerImage
-        position="top-3 right-80"
+        position="top-3 right-100"
         src={"/toys-figures/homelander.png"}
-        width={430}
+        width={240}
         height={70}
         animationDelay={1.4}
       />

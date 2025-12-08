@@ -14,10 +14,10 @@ export function ProductCard({ product }: { product: Product }) {
         alt=""
         fill
         className="h-full translate-y-10 scale-125 object-cover object-top duration-900 group-hover:scale-150 group-hover:transform group-hover:transition group-hover:duration-500"
-      />  
+      />
       <div className="absolute bottom-0 left-4 w-full px-2 py-1 backdrop-blur-sm">
         <h3 className="text-lg font-semibold">{product.name}</h3>
-        <p className="text-sm text-gray-700">${product.price}</p>
+        <p className="text-white">${product.price}</p>
       </div>
     </Link>
   );

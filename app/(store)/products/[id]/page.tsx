@@ -14,7 +14,7 @@ export default async function ProductPage({
   const product = products[0];
   return (
     <main>
-      <div className="flex flex-row justify-between px-6">
+      <div className="flex flex-row justify-between px-6 py-6">
         {/* Images panel */}
         <ProductImagesPanel images={product.images} />
         <section></section>

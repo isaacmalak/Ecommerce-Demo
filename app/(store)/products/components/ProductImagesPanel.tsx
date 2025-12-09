@@ -6,8 +6,8 @@ import { useState } from 'react';
 export function ProductImagesPanel({ images }: { images: string[] }) {
   const [image, setImage] = useState(images[0]);
   return (
-    <div className="flex w-1/4 flex-col items-center border px-4 py-7">
-      <div className="relative h-125 w-full border">
+    <div className="flex w-1/4 flex-col items-center rounded-3xl bg-[#34000030] p-6">
+      <div className="relative h-100 w-full rounded-2xl bg-red-800/5 p-30">
         <Image
           key={image}
           src={image}
@@ -19,16 +19,24 @@ export function ProductImagesPanel({ images }: { images: string[] }) {
           }}
         />
       </div>
-      <div className="flex flex-row">
-        {images.map((imgSrc, index) => (
-          <button
-            key={index}
-            onClick={() => setImage(imgSrc)}
-            className="relative m-2 h-20 w-20 cursor-pointer border"
-          >
-            <Image key={index} src={imgSrc} alt="" fill className="absolute" />
-          </button>
-        ))}
+      <div className="w-full overflow-auto">
+        <div className="flex min-w-max list-inside flex-row gap-2 overflow-x-auto pt-4">
+          {images.map((imgSrc, index) => (
+            <button
+              key={index}
+              onClick={() => setImage(imgSrc)}
+              className="relative h-30 w-20 cursor-pointer"
+            >
+              <Image
+                key={index}
+                src={imgSrc}
+                alt=""
+                fill
+                className="object-scale-down"
+              />
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ const navItems = [
 
 export function StoreNavBar() {
   return (
-    <nav className="flex h-23 items-center justify-between bg-red-900 px-6 backdrop-blur-xl">
+    <nav className="flex h-18 items-center justify-between bg-red-900 px-6 backdrop-blur-xl">
       <Logo />
       <div className="flex items-center space-x-4">
         {navItems.map((item) => (

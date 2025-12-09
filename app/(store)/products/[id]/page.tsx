@@ -1,6 +1,7 @@
 // FILE: app/products/[id]/page.tsx
 
 import { products } from '../../home/page';
+import { ProductDetails } from '../components/ProductDetails';
 import { ProductImagesPanel } from '../components/ProductImagesPanel';
 
 // 1. Make the function async
@@ -17,7 +18,8 @@ export default async function ProductPage({
       <div className="flex flex-row justify-between px-6 py-6">
         {/* Images panel */}
         <ProductImagesPanel images={product.images} />
-        <section></section>
+        {/* Product details */}
+        <ProductDetails product={product}/>
       </div>
     </main>
   );

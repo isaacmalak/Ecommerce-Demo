@@ -15,11 +15,12 @@ export default async function ProductPage({
   const product = products[0];
   return (
     <main>
-      <div className="flex flex-row justify-between px-6 py-6">
+      <div className="flex flex-row items-center justify-between px-6 py-6">
         {/* Images panel */}
         <ProductImagesPanel images={product.images} />
+        <div className="h-[600px] w-px bg-white/10 mx-8" />
         {/* Product details */}
-        <ProductDetails product={product}/>
+        <ProductDetails product={product} />
       </div>
     </main>
   );

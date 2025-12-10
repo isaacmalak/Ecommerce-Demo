@@ -13,7 +13,7 @@ export function Logo({ className }: { className?: string }) {
           className
         )}
       >
-        El S7s Group
+        Logo
       </h1>
     </Link>
   );

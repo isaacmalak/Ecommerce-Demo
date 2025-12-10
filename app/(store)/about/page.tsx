@@ -7,24 +7,23 @@ export default function AboutShell() {
             More Than Just Plastic. It’s Passion.
           </h1>
           <p className="text-lg text-gray-500">
-            Welcome to <strong>El S7s Group</strong>, the ultimate destination
-            for collectors, fans, and the young at heart. Whether you are
-            hunting for that elusive chase variant, building a 1/12 scale army,
-            or just looking for the perfect gift to spark a child&apos;s
-            imagination, you’ve landed in the right place.
+            Welcome to <strong>COMPANY</strong>, the ultimate destination for
+            collectors, fans, and the young at heart. Whether you are hunting
+            for that elusive chase variant, building a 1/12 scale army, or just
+            looking for the perfect gift to spark a child&apos;s imagination,
+            you’ve landed in the right place.
           </p>
         </header>
 
         <section className="mb-10">
           <h2 className="mb-2 text-2xl font-semibold">Our Origin Story</h2>
           <p className="mb-2">
-            <strong>El S7s Group</strong> wasn’t built in a boardroom; it was
-            built by collectors, for collectors. It started in{' '}
-            <strong>[Year]</strong> when <strong>[Founder Name/We]</strong>{' '}
-            realized that buying action figures online was often a gamble.
-            Between crushed boxes, delayed pre-orders, and impersonal service,
-            the joy of &quot;the hunt&quot; was getting lost. We decided to
-            change that.
+            <strong>COMPANY</strong> wasn’t built in a boardroom; it was built
+            by collectors, for collectors. It started in <strong>[Year]</strong>{' '}
+            when <strong>[Founder Name/We]</strong> realized that buying action
+            figures online was often a gamble. Between crushed boxes, delayed
+            pre-orders, and impersonal service, the joy of &quot;the hunt&quot;
+            was getting lost. We decided to change that.
           </p>
           <p>
             We set out to build the toy store we always wanted to shop at—one
@@ -99,7 +98,7 @@ export default function AboutShell() {
             reach out to us. We love talking shop.
           </p>
           <p>
-            Thank you for choosing <strong>El S7s Group</strong> to build your
+            Thank you for choosing <strong>COMPANY</strong> to build your
             collection.
           </p>
           <blockquote className="text-red mt-4 border-l-4 border-red-400 pl-4 text-red-700 italic">
@@ -140,7 +139,7 @@ export default function AboutShell() {
           <h3 className="mb-2 text-xl font-semibold">How to use this text:</h3>
           <ul className="mb-4 list-disc space-y-2 pl-6">
             <li>
-              Customize the Brackets: Replace El S7s Group, [Year], and [Founder
+              Customize the Brackets: Replace COMPANY, [Year], and [Founder
               Name] with your actual details.
             </li>
             <li>

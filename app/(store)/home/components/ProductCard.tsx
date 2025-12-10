@@ -5,7 +5,10 @@ import Link from 'next/link';
 export function ProductCard({ product }: { product: Product }) {
   return (
     <Link
-      href={''}
+      href={{
+        pathname: '/products/' + product.id,
+        query: { product: JSON.stringify(product) },
+      }}
       className="group relative flex h-64 flex-col overflow-hidden rounded-3xl bg-red-900/20 p-4"
     >
       {/* Check [Image element guide](/Images.md)*/}

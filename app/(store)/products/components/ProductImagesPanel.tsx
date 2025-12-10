@@ -49,7 +49,7 @@ export function ProductImagesPanel({ images }: { images: string[] }) {
           ref={scrollContainerRef}
           className="scrollbar-thumb-red-950 scrollbar-thin scrollbar-track-red-400/10 w-full overflow-x-scroll"
         >
-          <div className="flex min-w-max flex-row gap-2 py-4">
+          <div className="flex min-w-max flex-row justify-center gap-2 py-4">
             {images.map((imgSrc, index) => (
               <button
                 key={index}

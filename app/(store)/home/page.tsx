@@ -86,9 +86,9 @@ export const products: Product[] = [
 ];
 export default function HomeShell() {
   return (
-    <main className="flex flex-col gap-3 p-4">
+    <main className="flex flex-col gap-3 p-3 md:p-4">
       <HomeBanner />
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

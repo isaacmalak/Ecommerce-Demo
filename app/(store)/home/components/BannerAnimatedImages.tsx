@@ -2,7 +2,7 @@ import { BannerImage } from "./BannerImage";
 
 export function BannerAnimatedImages() {
   return (
-    <div className="relative flex h-[230px] w-1/2 flex-row overflow-hidden">
+    <div className="relative hidden h-[180px] w-full flex-row overflow-hidden sm:flex md:h-[230px] md:w-1/2">
       <BannerImage
         position="right-34 top-7 z-10 "
         src={"/toys-figures/superman.png"}

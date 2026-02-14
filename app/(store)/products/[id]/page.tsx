@@ -18,10 +18,10 @@ export default function ProductPage({
   const parsedProduct = JSON.parse(product as unknown as string) as Product;
   return (
     <main>
-      <div className="flex flex-row items-center px-6 py-6">
+      <div className="flex flex-col items-center px-4 py-4 lg:flex-row lg:px-6 lg:py-6">
         {/* Images panel */}
         <ProductImagesPanel images={parsedProduct.images} />
-        <div className="mx-8 h-[600px] w-px bg-white/10" />
+        <div className="mx-8 hidden h-[600px] w-px bg-white/10 lg:block" />
         {/* Product details */}
         <ProductDetails product={parsedProduct} />
       </div>

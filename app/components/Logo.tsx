@@ -9,7 +9,7 @@ export function Logo({ className }: { className?: string }) {
     >
       <h1
         className={cn(
-          'text-5xl font-bold text-yellow-400 drop-shadow-[4px_4px_0px_rgba(255,115,0,1)]',
+          'text-3xl font-bold text-yellow-400 drop-shadow-[4px_4px_0px_rgba(255,115,0,1)] md:text-5xl',
           className
         )}
       >

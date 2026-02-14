@@ -29,9 +29,9 @@ export function ProductImagesPanel({ images }: { images: string[] }) {
   }, []);
 
   return (
-    <div className="flex w-1/2 justify-end">
-      <div className="flex max-h-[650px] w-2/3 flex-col items-center rounded-3xl bg-[#34000030] p-6">
-        <div className="relative h-100 w-full rounded-2xl bg-red-800/5 p-5">
+    <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
+      <div className="flex w-full max-w-lg flex-col items-center rounded-3xl bg-[#34000030] p-4 lg:max-h-[650px] lg:w-2/3 lg:p-6">
+        <div className="relative h-72 w-full rounded-2xl bg-red-800/5 p-5 md:h-96 lg:h-100">
           <div className="relative h-full w-full">
             <Image
               key={image}
@@ -54,7 +54,7 @@ export function ProductImagesPanel({ images }: { images: string[] }) {
               <button
                 key={index}
                 onClick={() => setImage(imgSrc)}
-                className="relative h-30 w-20 cursor-pointer"
+                className="relative h-20 w-16 cursor-pointer md:h-30 md:w-20"
               >
                 <Image
                   key={index}
